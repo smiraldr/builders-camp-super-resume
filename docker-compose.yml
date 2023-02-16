@@ -9,6 +9,16 @@ services:
     environment:
       - xpack.security.enabled=false
       - discovery.type=single-node
+      - node.name=es01
+      - cluster.name=es-docker-cluster
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - http.host=0.0.0.0
+      - http.port=9200
+      - "http.cors.allow-origin=*"
+      - "http.cors.enabled=true"
+      - "http.cors.allow-headers=X-Requested-With,X-Auth-Token,Content-Type,Content-Length,Authorization"
+      - "http.cors.allow-credentials=true"
     ulimits:
       memlock:
         soft: -1
@@ -23,6 +33,12 @@ services:
     ports:
       - 9200:9200
       - 9300:9300
+
+  frontend:
+    build: .
+    container_name: frontend-super-resume
+    ports:
+      - 3000:3000
 
 volumes:
   elasticsearch-data:
