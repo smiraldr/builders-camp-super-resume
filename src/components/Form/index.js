@@ -24,7 +24,6 @@ const handleChange = (event)=>{
 }
 
 
-
 const handleSubmit = (e, user) =>{
     e.preventDefault()
         const data = {...user, ["experience"]:parseInt(user.experience)}
