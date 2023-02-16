@@ -6,7 +6,7 @@ import Avatar from '../Avatar'
 
 const NavBar = () => {
   return (
-    <nav className='flex items-center justify-between px-16 py-4 bg-purple-800 shadow-md bg-slate-50'>
+    <nav className='flex items-center justify-between px-16 py-4 bg-purple-800 shadow-md '>
         <div className='overflow-hidden '>
             <Link to="/"><Avatar  src={logo} background={"bg-black"}/></Link>
         </div>
