@@ -25,7 +25,7 @@ sudo chmod +x create_index.sh
 
 
 ## NOTE
-Due to challenges with building a fully performant application within time limit on Intel powered machines ( we used mac as our dev machines :") ) - the code for model inference was run on jupter notebooks on (Intel Dev Cloud)[https://jupyter.oneapi.devcloud.intel.com/] which have been included in the repositories. In ideal scenario we would have created an api for the embedding and ranking logic which would be called through frontend on events like upload resume and upload job description. The final algorithm was tested and derived in the limited time of hackathon.
+Due to challenges with building a fully performant application within time limit on Intel powered machines ( we used mac as our dev machines :") ) - the code for model inference was run on jupter notebook on [Intel Dev Cloud](https://jupyter.oneapi.devcloud.intel.com/) which have been included in the repositories. In ideal scenario we would have created an api for the embedding and ranking logic which would be called through frontend on events like upload resume and upload job description. The final algorithm was tested and derived in the limited time of hackathon.
 
 ## Project Presentation link:
 [Presentation](https://docs.google.com/presentation/d/1u6hiRiW8ikNjFJkNsNWLTQ6TlrmfJ2j2k2h3LWu5AwU/edit?usp=sharing)
