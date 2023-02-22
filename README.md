@@ -1,6 +1,7 @@
 # builders-camp-super-resume
 
-Built for Builders Camp Hackathon 2023
+#Winning solution for Builders Camp Hackathon 2023
+Built for Builders Camp Hackathon 2023 
 
 To run this project run the following commands
 
